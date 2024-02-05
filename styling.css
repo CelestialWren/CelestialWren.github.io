@@ -26,10 +26,48 @@
   font-style: italic;
 }
 
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
 html {
     font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
 }
 
+h1{
+  font-size: 140px; 
+  text-align: center;
+}
+
 dl {
     margin-left:40px;
-} 
+}
+
+div.me{
+  writing-mode: vertical-lr;
+  margin-left: 31.75%;
+}
+
+div.wow{
+  writing-mode: vertical-lr;
+  margin-left: 29%;
+}
+
+div.intro{
+  background: radial-gradient(rgb(188,177,224) 40%,rgb(129,219,174));
+  height: 820px;
+
+  margin: 0px;
+  padding-top: 0px;
+  width: 100%;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
