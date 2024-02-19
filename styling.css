@@ -45,6 +45,16 @@ h1{
   text-align: center;
 }
 
+h2{
+  margin-left: 5px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+p{
+  margin-left: 5px;
+}
+
 dl {
     margin-left:40px;
 }
@@ -63,8 +73,7 @@ div.intro{
   background: radial-gradient(rgb(188,177,224) 40%,rgb(129,219,174));
   height: 820px;
 
-  margin: 0px;
-  padding-top: 0px;
+  margin-bottom: 5%;
   width: 100%;
 
   display:flex;
