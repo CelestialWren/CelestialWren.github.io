@@ -1,2 +1,2 @@
 #!bash
-python3 -m http.server --directory /Users/lukasfiur/maiaWebsite/
+python3 -m http.server --directory $PWD
