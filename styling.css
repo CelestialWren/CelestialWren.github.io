@@ -43,20 +43,13 @@
   initial-value: rgb(188,177,224);
 }
 
-@property --c2{
-  syntax: '<color>';
-  inherits: false;
-  initial-value: rgb(129,219,174);
-}
-
   html {
   /*  needed for firefox to have a valid output */
   --c1:rgb(188,177,224);
-  --c2:rgb(129,219,174);
 
   /**/
   cursor:pointer;
-  background:radial-gradient(var(--c1) 40%, var(--c2));
+  background:radial-gradient(var(--c1) 40%, rgb(129,219,174));
   animation:a 3s linear infinite alternate;
   font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
 
@@ -64,12 +57,10 @@
 
 @keyframes a{
   from {
-  --c1:rgb(188,177,224);
-  --c2:rgb(129,219,174);
+  --c1:rgb(198,177,234);
   }
   to {
-  --c1:rgb(129,219,174);
-  --c2:rgb(188,177,224);
+  --c1:rgb(104,162,209);
   }
 }
 
