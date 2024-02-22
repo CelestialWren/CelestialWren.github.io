@@ -36,9 +36,45 @@
         background: transparent;
     }
 
-html {
-    font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+/*Animate Gradient, doesn't work in waterfox*/
+@property --c1{
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(188,177,224);
 }
+
+@property --c2{
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(129,219,174);
+}
+
+  html {
+  /*  needed for firefox to have a valid output */
+  --c1:rgb(188,177,224);
+  --c2:rgb(129,219,174);
+
+  /**/
+  cursor:pointer;
+  background:radial-gradient(var(--c1) 40%, var(--c2));
+  animation:a 3s linear infinite alternate;
+  font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+
+}
+
+@keyframes a{
+  from {
+  --c1:rgb(188,177,224);
+  --c2:rgb(129,219,174);
+  }
+  to {
+  --c1:rgb(129,219,174);
+  --c2:rgb(188,177,224);
+  }
+}
+
+
+
 
 h1{
   font-size: 140px; 
@@ -70,7 +106,6 @@ div.wow{
 }
 
 div.intro{
-  background: radial-gradient(rgb(188,177,224) 40%,rgb(129,219,174));
   height: 820px;
 
   margin-bottom: 5%;
@@ -79,4 +114,56 @@ div.intro{
   display:flex;
   align-items: center;
   justify-content: center;
+}
+
+p.bubble{
+  background: white;
+  width: 70%;
+  text-align: center;
+  margin: 10px auto 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+  
+  padding: 10px 5px;
+
+}
+
+h2.bubble{
+  background: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+
+  width: fit-content; 
+  padding: 10px 5px;
+}
+
+table.bubble{
+  background: white;
+  text-align: center;
+  margin: 10px auto 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+  
+  padding: 10px 5px;
+
+}
+
+dd.bubble{
+  background: white;
+  width: fit-content;
+  text-align: center;
+  margin: 10px auto 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+  
+  padding: 10px 5px;
+
 }
