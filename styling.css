@@ -158,3 +158,18 @@ dd.bubble{
   padding: 10px 5px;
 
 }
+
+dt.bubble{
+  background: white;
+  width: fit-content;
+  text-align: center;
+  margin: 10px;
+  margin-left: 4%;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+  
+  padding: 10px 5px;
+
+}
