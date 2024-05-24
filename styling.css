@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url('Fonts/AtkinsonHyperlegibleRegular.otf') format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url('Fonts/AtkinsonHyperlegibleBold.otf') format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url('Fonts/AtkinsonHyperlegibleItalic.otf') format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url('Fonts/AtkinsonHyperlegibleBold.otf') format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+/*Animate Gradient, doesn't work in waterfox*/
+@property --c1{
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(188,177,224);
+}
+
+  html {
+  /*  needed for firefox to have a valid output */
+  --c1:rgb(188,177,224);
+
+  /**/
+  cursor:pointer;
+  background:radial-gradient(var(--c1) 40%, rgb(129,219,174));
+  animation:a 3s linear infinite alternate;
+  font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+
+}
+
+@keyframes a{
+  from {
+  --c1:rgb(198,177,234);
+  }
+  to {
+  --c1:rgb(104,162,209);
+  }
+}
+
+
+
+
+h1{
+  font-size: 140px; 
+  text-align: center;
+}
+
+h2{
+  margin-left: 5px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+p{
+  margin-left: 5px;
+}
+
+dl {
+    margin-left:40px;
+}
+
+div.me{
+  writing-mode: vertical-lr;
+  margin-left: 31.75%;
+}
+
+div.wow{
+  writing-mode: vertical-lr;
+  margin-left: 29%;
+}
+
+div.intro{
+  height: 820px;
+
+  margin-bottom: 5%;
+  width: 100%;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p.bubble{
+  background: white;
+  width: 70%;
+  text-align: center;
+  margin: 10px auto 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+  
+  padding: 10px 5px;
+
+}
+
+h2.bubble{
+  background: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+
+  width: fit-content; 
+  padding: 10px 5px;
+}
+
+table.bubble{
+  background: white;
+  text-align: center;
+  margin: 10px auto 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+  
+  padding: 10px 5px;
+
+}
+
+dd.bubble{
+  background: white;
+  width: fit-content;
+  text-align: center;
+  margin: 10px auto 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+  
+  padding: 10px 5px;
+
+}
+
+dt.bubble{
+  background: white;
+  width: fit-content;
+  text-align: center;
+  margin: 10px;
+  margin-left: 4%;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 20px;
+  
+  padding: 10px 5px;
+
+}
